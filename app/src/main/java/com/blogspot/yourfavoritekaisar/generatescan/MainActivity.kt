@@ -3,11 +3,11 @@ package com.blogspot.yourfavoritekaisar.generatescan
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.WriterException
@@ -18,7 +18,7 @@ private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    lateinit var intentIntegrator : IntentIntegrator
+    private lateinit var intentIntegrator: IntentIntegrator
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
